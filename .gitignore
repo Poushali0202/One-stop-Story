@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+build/
+.env
+runtime/
+*.log
+.DS_Store
