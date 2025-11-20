@@ -1,28 +1,39 @@
 {
   "expo": {
     "name": "One-stop-Story",
-    "slug": "One-stop-Stor",
-    "scheme": "oneanddone",
-    "version": "0.1.0",
+    "slug": "one-stop-story",
+    "scheme": "onestopstory",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+
+    "assetBundlePatterns": ["**/*"],
+
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.poushali.onestopstory",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses the microphone to record your story for transcription."
+      }
     },
+
     "android": {
+      "package": "com.poushali.onestopstory",
+      "versionCode": 1,
+      "permissions": ["RECORD_AUDIO", "INTERNET"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
+
     "web": {
       "bundler": "metro",
       "favicon": "./assets/icon.png"
