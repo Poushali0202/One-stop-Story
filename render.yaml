@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: one-stop-story-server
+    env: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 8787
+      - key: HOST
+        value: 0.0.0.0
+      - key: NODE_ENV
+        value: production
+      # optional: add any others from your .env (no secrets in repo)
+      # - key: GOOGLE_APPLICATION_CREDENTIALS
+      #   sync: false
+      # - key: PUBLIC_BASE_URL
+      #   value: https://one-stop-story.onrender.com
